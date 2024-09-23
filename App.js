@@ -1,10 +1,13 @@
 import {StyleSheet, View, Text} from 'react-native';
+import React, {useState} from 'react';
+
+
 
 export default function App(){
-
-  return(
+  const [fullname, setFullname] = useState("Jack O Neill");
+ return(
     <View>
-      <Text style={styles.paragraph}>Hello, World</Text>
+      <Text style={styles.paragraph}>Hello, World {fullname}</Text>
     </View>  
   )
 }
